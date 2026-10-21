@@ -1,0 +1,19 @@
+# Dependencias
+/vendor/
+
+# Variables de entorno (credenciales)
+.env
+.env.local
+
+# Logs de PHP
+*.log
+error_log
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
