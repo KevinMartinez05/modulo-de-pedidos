@@ -1,0 +1,10 @@
+Options -Indexes
+RewriteEngine On
+
+# Redirigir /api/pedidos al endpoint PHP
+RewriteRule ^api/pedidos$ api/pedidos.php [L,QSA]
+
+# Todo lo demás va al index.php (excepto archivos reales)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L,QSA]
